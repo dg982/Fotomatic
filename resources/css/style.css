@@ -37,20 +37,23 @@ html {
 /* Header */
 
 header {
-  position: fixed;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  position: fixed;
+  z-index: 100;
 }
 
 header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
+  height: 85px;
 }
 
 header .logo {
   flex: 1;
+  padding-left: 30px;
 }
 
 header nav ul {
@@ -66,6 +69,7 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  font-family: Roboto;
 }
 
 nav a img {
@@ -94,7 +98,6 @@ header .mobile {
 
   header .content {
     padding: .5rem 0;
-    position: fixed;
   }
 
   header .mobile ul {
@@ -123,6 +126,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/banner-landingpage.jpg");
 }
 
 #sign-up-cta {
@@ -130,6 +134,8 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-left: 100px;
+  margin-top: 170px;
 }
 
 #sign-up-cta .content {
