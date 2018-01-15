@@ -22,15 +22,11 @@ html {
 
 .image-container {
   overflow: hidden;
-  margin: 64px 16px 46px 16px;
-  height: 635px;
 }
 
 .image-container img {
   display: block;
   width: 100%;
-  height: 65%;
-  margin: 4px 32px 40px 0px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -53,12 +49,12 @@ header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem 0rem;
-  height: 25px;
+  height: 25px; //
 }
 
 header .logo {
   flex: 1;
-  padding-left: 30px;
+  padding-left: 30px; //
 }
 
 header nav ul {
@@ -74,8 +70,9 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
-  font-family: Roboto;
+  font-family: Roboto; //
 }
+
 
 nav a img {
   height: 15px;
@@ -90,12 +87,6 @@ header .icon {
 
 header .mobile {
   display: none;
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1024px) {
-  nav a img {
-      width: 100px;
-  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -123,9 +114,9 @@ header .mobile {
     padding: 0;
   }
 
-  header img {
+//**  header img {
     width: 100px;
-  }
+  } **//
 
   header .mobile .button {
     padding: .1875rem .5rem;
@@ -143,9 +134,13 @@ header .mobile {
   align-items: flex-start;
   height: 43.5rem;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/banner-landingpage.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #sign-up-cta {
+  /**position: relative;**/
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -259,7 +254,8 @@ header .mobile {
 }
 
 .feature .content {
-  height: 125px;
+  //**height: 125px; **//
+  padding: 2.5rem 0;
 }
 
 .feature h2 {
@@ -299,6 +295,10 @@ header .mobile {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
+  .feature .content {
+    padding: 1.25rem 0 1.875rem 0;
+  }
 }
 
 /* Filters Section */
@@ -330,17 +330,13 @@ header .mobile {
   max-width: 100%;
   display: flex;
   padding: 0 1%;
-  margin-bottom: 10px;
+  /**margin-bottom: 10px;**/
 }
 
-#filters-section .image-container {
-  overflow: hidden;
-}
-
-#filters-section .images-containers img {
+/**#filters-section .images-containers img {
   display: block;
   max-width: 100%;
-}
+} **/
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -396,7 +392,7 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
@@ -405,7 +401,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
